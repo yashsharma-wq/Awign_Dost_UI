@@ -475,8 +475,7 @@ const Jobs = () => {
         }
         return;
       }
-
-      // Insert valid rows
+          // Insert valid rows
       const { error } = await supabase.from("AEX_Job_Data").insert(validRows as any);
 
       if (error) throw error;
