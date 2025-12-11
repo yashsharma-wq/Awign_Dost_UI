@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Note: Netlify's secret scanner may flag environment variable names
+# (like VITE_SUPABASE_URL) in the source code. These are NOT actual secrets,
+# just references to environment variables that should be set in Netlify's
+# dashboard under Site settings > Environment variables.
+
